@@ -1,0 +1,7 @@
+[wrap-git]
+url = https://github.com/wolfpld/etcpak.git
+revision = HEAD
+depth = 1
+patch_directory = etcpak
+[provide]
+dependency_names = etcpak

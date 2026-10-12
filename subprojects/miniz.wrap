@@ -1,0 +1,6 @@
+[wrap-git]
+url = https://github.com/richgel999/miniz.git
+revision = HEAD
+depth = 1
+[provide]
+dependency_names = miniz

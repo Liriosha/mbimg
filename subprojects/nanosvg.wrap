@@ -1,0 +1,8 @@
+[wrap-git]
+directory = nanosvg
+url = https://github.com/memononen/nanosvg.git
+revision = HEAD
+patch_directory = nanosvg
+depth=1
+[provide]
+dependency_names = nanosvg

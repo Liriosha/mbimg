@@ -1,0 +1,8 @@
+[wrap-git]
+directory = astc-encoder 
+url = https://github.com/ARM-software/astc-encoder.git
+revision = HEAD
+patch_directory = astc-encoder 
+depth=1
+[provide]
+dependency_names = astc-encoder

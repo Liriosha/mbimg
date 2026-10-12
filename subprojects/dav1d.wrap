@@ -1,0 +1,4 @@
+[wrap-git]
+url = https://github.com/videolan/dav1d.git
+revision = HEAD
+depth = 1

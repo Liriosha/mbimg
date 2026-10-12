@@ -1,0 +1,7 @@
+[wrap-git]
+url = https://github.com/lvandeve/lodepng.git
+revision = HEAD
+depth = 1
+patch_directory = lodepng
+[provide]
+dependency_names = lodepng 

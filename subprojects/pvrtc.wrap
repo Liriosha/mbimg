@@ -1,0 +1,8 @@
+[wrap-git]
+directory = pvrtc
+url = https://github.com/brenwill/PVRTCCompressor.git
+revision = HEAD
+patch_directory = pvrtc
+depth=1
+[provide]
+dependency_names = pvrtc

@@ -1,0 +1,8 @@
+[wrap-git]
+url = https://github.com/tjdistler/iqa.git
+revision = HEAD
+depth = 1
+patch_directory = iqa
+# TODO: Write a patch fixing the inline warnings 
+[provide]
+dependency_names = iqa

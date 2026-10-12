@@ -1,0 +1,8 @@
+[wrap-git]
+url = https://github.com/oblivioncth/libsquish
+revision = HEAD
+depth = 1
+patch_directory = libsquish
+diff_files = patches/squish/export.patch
+[provide]
+dependency_names = libsquish

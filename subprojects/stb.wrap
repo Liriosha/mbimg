@@ -1,0 +1,8 @@
+[wrap-git]
+directory = stb
+url = https://github.com/nothings/stb.git
+revision = HEAD
+patch_directory = stb
+depth=1
+[provide]
+dependency_names = stb

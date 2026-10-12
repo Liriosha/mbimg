@@ -1,0 +1,7 @@
+[wrap-git]
+url = https://github.com/winlibs/libavif.git
+revision = HEAD
+depth = 1
+patch_directory = libavif
+[provide]
+dependency_names = libavif

@@ -1,0 +1,4 @@
+diff --git a/_old/make/squish_export.h b/lib/include/squish/squish_export.h
+similarity index 100%
+rename from _old/make/squish_export.h
+rename to lib/include/squish/squish_export.h
