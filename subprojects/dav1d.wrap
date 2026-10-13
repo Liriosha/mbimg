@@ -2,3 +2,5 @@
 url = https://github.com/videolan/dav1d.git
 revision = HEAD
 depth = 1
+[provide]
+dav1d = dav1d_dep
