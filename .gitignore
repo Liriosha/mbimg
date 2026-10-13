@@ -26,3 +26,6 @@ subprojects/catch2.wrap
 
 !subprojects/nvtt
 !subprojects/nvtt/**
+
+!subprojects/dav1d
+!subprojects/dav1d/**
