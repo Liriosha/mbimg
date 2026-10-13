@@ -1,4 +1,4 @@
-project('libavif', 'c')
+project('libavif', ['c','cpp'])
 
 libavif_lib = static_library(
     'libavif',
