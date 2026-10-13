@@ -14,7 +14,6 @@
 !3rdparty/**
 !subprojects
 !subprojects/*.wrap
-subprojects/catch2.wrap
 !subprojects/packagefiles
 !subprojects/packagefiles/**
 
