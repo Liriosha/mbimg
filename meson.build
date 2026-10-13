@@ -1,4 +1,10 @@
-project('bimg', ['cpp', 'c'])
+project('bimg', ['cpp', 'c'],default_options:['unity=on'])
+add_project_arguments('-funsigned-char', language: 'cpp')
+
+if sys.OS() is 'Linux':
+  add_project_arguments('-fPIC', language: 'cpp')
+endif
+
 cc = meson.get_compiler('cpp')
 fs = import('fs')
 sources = []

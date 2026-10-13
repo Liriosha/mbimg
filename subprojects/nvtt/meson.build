@@ -20,7 +20,8 @@ nvtt_lib = static_library(
         'nvmath/fitting.cpp',
     ],
     include_directories: '.',
-    dependencies: dependency('bx')
+    dependencies: dependency('bx'),
+    override_options: ['unity=off'],
 )
 
 nvtt_dep = declare_dependency(
