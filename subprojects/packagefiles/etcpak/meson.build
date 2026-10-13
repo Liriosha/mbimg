@@ -14,7 +14,7 @@ etcpak_lib = static_library(
         'Dither.cpp',
         'Error.cpp',
         'mmap.cpp',
-        'ProcessDxtc.cpp',
+        # 'ProcessDxtc.cpp',
         'ProcessRGB.cpp',
         'System.cpp',
         'Tables.cpp',
