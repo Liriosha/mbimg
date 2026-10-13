@@ -603,3 +603,37 @@ index af8b980..34c4f5c 100644
  static int FloatTo565( Vec3::Arg colour )
  {
      // get the components in the correct range
+diff --git a/lib/src/singlecolourfit.cpp b/lib/src/singlecolourfit.cpp
+index cef0ebc..14842fa 100644
+--- a/lib/src/singlecolourfit.cpp
++++ b/lib/src/singlecolourfit.cpp
+@@ -23,6 +23,7 @@
+ 
+    -------------------------------------------------------------------------- */
+ 
++#include "floattoint.h"
+ #include "singlecolourfit.h"
+ #include "colourset.h"
+ #include "colourblock.h"
+@@ -43,21 +44,6 @@ struct SingleColourLookup
+ 
+ #include "singlecolourlookup.inl"
+ 
+-static int FloatToInt( float a, int limit )
+-{
+-    // use ANSI round-to-zero behaviour to get round-to-nearest
+-    int i = ( int )( a + 0.5f );
+-
+-    // clamp to the limit
+-    if( i < 0 )
+-        i = 0;
+-    else if( i > limit )
+-        i = limit;
+-
+-    // done
+-    return i;
+-}
+-
+ SingleColourFit::SingleColourFit( ColourSet const* colours, int flags )
+   : ColourFit( colours, flags )
+ {
