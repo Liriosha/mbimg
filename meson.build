@@ -1,8 +1,8 @@
-project('bimg', ['cpp', 'c'],default_options:['unity=on'])
+project('bimg', ['cpp', 'c'], default_options: ['unity=on', 'cpp_std=c++20'])
 add_project_arguments('-funsigned-char', language: 'cpp')
 
 if host_machine.system() == 'Linux'
-  add_project_arguments('-fPIC', language: 'cpp')
+    add_project_arguments('-fPIC', language: 'cpp')
 endif
 
 cc = meson.get_compiler('cpp')
@@ -28,7 +28,7 @@ dep_names = [
     'libavif',
     'nvtt',
     'etc1',
-    'edtaa'
+    'edtaa',
 ]
 deps = []
 foreach n : dep_names
