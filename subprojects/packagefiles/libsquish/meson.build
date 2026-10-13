@@ -12,6 +12,7 @@ libsquish_lib = static_library(
         'lib/src/rangefit.cpp',
         'lib/src/singlecolourfit.cpp',
         'lib/src/squish.cpp',
+        'lib/src/floattoint.cpp'
     ],
     include_directories: ['lib/include', '_old/make'],
 )
