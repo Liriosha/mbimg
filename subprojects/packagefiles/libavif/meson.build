@@ -5,15 +5,15 @@ libavif_lib = static_library(
     [
         'src/alpha.c',
         'src/avif.c',
-        'src/codec_aom.c',
-        'src/codec_avm.c',
+        # 'src/codec_aom.c',
+        # 'src/codec_avm.c',
         'src/codec_dav1d.c',
-        'src/codec_libgav1.c',
-        'src/codec_rav1e.c',
-        'src/codec_svt.c',
+        # 'src/codec_libgav1.c',
+        # 'src/codec_rav1e.c',
+        # 'src/codec_svt.c',
         'src/colr.c',
         'src/colrconvert.c',
-        'src/compliance.cc',
+        # 'src/compliance.cc',
         'src/diag.c',
         'src/exif.c',
         'src/gainmap.c',
@@ -43,6 +43,7 @@ libavif_lib = static_library(
         'third_party/iccjpeg',
         'third_party/libyuv/include',
     ],
+    override_options:['unity=off']
 )
 
 libavif_dep = declare_dependency(
