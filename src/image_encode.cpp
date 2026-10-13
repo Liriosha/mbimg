@@ -10,9 +10,9 @@
 #include <PvrTcEncoder.h>
 #include <RgbaBitmap.h>
 #include <astcenc.h>
-#include <edtaa3/edtaa3func.h>
-#include <etc1/etc1.h>
-#include <nvtt/nvtt.h>
+#include <edtaa3func.h>
+#include <etc1.h>
+#include <nvtt.h>
 #include <squish/squish.h>
 
 BX_PRAGMA_DIAGNOSTIC_PUSH();

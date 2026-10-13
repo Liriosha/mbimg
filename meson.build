@@ -20,23 +20,24 @@ dep_names = [
     'pvrtc',
     'etcpak',
     'libavif',
+    'nvtt',
+    'etc1',
+    'edtaa'
 ]
 deps = []
 foreach n : dep_names
     deps += dependency(n)
 endforeach
 
-bimg_inc = ['include', '3rdparty']
-
 bimg_lib = static_library(
     'bimg',
     sources,
-    include_directories: bimg_inc,
+    include_directories: 'include',
     dependencies: deps,
 )
 
 bimg_dep = declare_dependency(
-    include_directories: bimg_inc,
+    include_directories: 'include',
     link_with: bimg_lib,
 )
 

@@ -17,3 +17,12 @@
 subprojects/catch2.wrap
 !subprojects/packagefiles
 !subprojects/packagefiles/**
+
+!subprojects/edtaa
+!subprojects/edtaa/**
+
+!subprojects/etc1
+!subprojects/etc1/**
+
+!subprojects/nvtt
+!subprojects/nvtt/**
