@@ -1,7 +1,7 @@
 project('bimg', ['cpp', 'c'],default_options:['unity=on'])
 add_project_arguments('-funsigned-char', language: 'cpp')
 
-if sys.OS() is 'Linux':
+if  host_machine.system() == 'Linux':
   add_project_arguments('-fPIC', language: 'cpp')
 endif
 
