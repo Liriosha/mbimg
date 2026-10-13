@@ -7,9 +7,10 @@ index 7039c1a..8361ae3 100644
  
  #include "alpha.h"
 -
-+#include <climits>
+-#include <climits>
 +#include "floattoint.h"
  #include <algorithm>
++#include <climits>
  
  namespace squish {
  
