@@ -50,7 +50,7 @@ libavif_lib = static_library(
 libavif_dep = declare_dependency(
     include_directories: ['third_party/iccjpeg', 'third_party/libyuv/include'],
     link_with: libavif_lib,
-    dependencies: dependency('dav1d')
+    dependencies: [dependency('dav1d'),dependency('libjpeg')]
 )
 
 meson.override_dependency('libavif', libavif_dep)
