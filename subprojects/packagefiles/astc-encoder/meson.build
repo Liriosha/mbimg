@@ -27,6 +27,7 @@ astc_lib = static_library(
         'Source/astcenc_weight_quant_xfer_tables.cpp',
     ],
     include_directories: 'Source',
+    override_options:['unity=off']
 )
 
 astc_dep = declare_dependency(include_directories: 'Source', link_with: astc_lib)
