@@ -18,6 +18,7 @@ nvtt_lib = static_library(
         'bc7/avpcl_mode7.cpp',
         'bc7/avpcl_utils.cpp',
         'nvmath/fitting.cpp',
+        'nvtt.c'
     ],
     include_directories: '.',
     dependencies: dependency('bx'),
