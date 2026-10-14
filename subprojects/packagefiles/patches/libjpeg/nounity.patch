@@ -1,3 +1,31 @@
+diff --git a/simd/meson.build b/simd/meson.build
+index add6fa4..b189470 100644
+--- a/simd/meson.build
++++ b/simd/meson.build
+@@ -351,6 +351,7 @@ elif host_cpu in ['ppc', 'ppc64']
+       include_directories: [incdir, 'powerpc'],
+       pic: get_option('default_library') != 'static',
+       c_args: '-maltivec',
++      override_options: ['unity=off']
+     )
+   endif
+ elif host_cpu == 'riscv64'
+@@ -381,6 +382,7 @@ elif host_cpu == 'riscv64'
+       include_directories: [incdir, 'riscv64'],
+       pic: get_option('default_library') != 'static',
+       c_args: '-march=rv64gcv',
++      override_options: ['unity=off']
+     )
+   endif
+ elif host_cpu == 'loongarch64'
+@@ -413,6 +415,7 @@ elif host_cpu == 'loongarch64'
+         '-Wa,-mloongson-mmi,-mloongson-ext',
+         cc.get_supported_arguments('-fno-strict-aliasing'),
+       ],
++      override_options: ['unity=off']
+     )
+   endif
+ elif simd_opt.enabled()
 diff --git a/src/meson.build b/src/meson.build
 index 9312865..60579b9 100644
 --- a/src/meson.build
