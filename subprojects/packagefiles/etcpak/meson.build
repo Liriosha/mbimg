@@ -1,5 +1,7 @@
 project('etcpak', 'cpp', default_options:['cpp_std=c++20'])
 
+add_project_arguments('-DNOMINMAX', language: ['c', 'cpp'])
+
 etcpak_lib = static_library(
     'etcpak',
     [
