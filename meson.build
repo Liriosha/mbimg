@@ -1,8 +1,13 @@
-project('bimg', ['cpp', 'c'], default_options: ['unity=on', 'cpp_std=c++20'])
+project('bimg', ['cpp', 'c'], default_options: ['unity=on', 'cpp_std=c++20', 'c_std=c11'])
 add_project_arguments('-funsigned-char', language: 'cpp')
 
 if host_machine.system() == 'Linux'
     add_project_arguments('-fPIC', language: 'cpp')
+endif
+
+# This is needed for dav1d
+if meson.get_compiler('cpp').get_id() == 'msvc'
+    add_project_arguments('/experimental:c11atomics', language: 'c')
 endif
 
 cc = meson.get_compiler('cpp')

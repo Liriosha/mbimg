@@ -1,4 +1,4 @@
-project('dav1d','c',version:'1.5.3',default_options:['c_std=c11'])
+project('dav1d','c',version:'1.5.3')
 
 dav1d_lib = static_library(
     'dav1d',
