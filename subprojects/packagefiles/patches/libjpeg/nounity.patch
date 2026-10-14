@@ -1,0 +1,12 @@
+diff --git a/src/meson.build b/src/meson.build
+index 9312865..60579b9 100644
+--- a/src/meson.build
++++ b/src/meson.build
+@@ -138,6 +138,7 @@ jpeg = library(
+   soversion: so_version,
+   vs_module_defs: vs_defs,
+   install: true,
++  override_options: ['unity=off']
+ )
+ 
+ pkg.generate(

@@ -9,6 +9,7 @@ patch_url = https://wrapdb.mesonbuild.com/v2/libjpeg-turbo_3.2.0-1/get_patch
 patch_fallback_url = https://github.com/mesonbuild/wrapdb/releases/download/libjpeg-turbo_3.2.0-1/libjpeg-turbo_3.2.0-1_patch.zip
 patch_hash = c746b7b102de8f7660b9df30b2d68fd75dfbab45ed658eda257c1976e3371d2e
 wrapdb_version = 3.2.0-1
+diff_files = patches/libjpeg/nounity.patch
 
 [provide]
 dependency_names = libjpeg, libturbojpeg
