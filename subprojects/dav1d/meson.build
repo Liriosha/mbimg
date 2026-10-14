@@ -1,5 +1,10 @@
 project('dav1d','c',version:'1.5.3',default_options:['c_std=c11'])
 
+# This is needed for dav1d
+if meson.get_compiler('cpp').get_id() == 'msvc'
+    add_project_arguments('/experimental:c11atomics', language: 'c')
+endif
+
 dav1d_lib = static_library(
     'dav1d',
     'dav1d-amalgamated.c',

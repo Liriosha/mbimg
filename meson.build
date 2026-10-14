@@ -5,11 +5,6 @@ if host_machine.system() == 'Linux'
     add_project_arguments('-fPIC', language: 'cpp')
 endif
 
-# This is needed for dav1d
-if meson.get_compiler('cpp').get_id() == 'msvc'
-    add_project_arguments('/experimental:c11atomics', language: 'c')
-endif
-
 cc = meson.get_compiler('cpp')
 fs = import('fs')
 sources = []
