@@ -1,4 +1,4 @@
-project('etcpak', 'cpp')
+project('etcpak', 'cpp', default_options:['cpp_std=c++20'])
 
 etcpak_lib = static_library(
     'etcpak',
