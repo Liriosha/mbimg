@@ -7,6 +7,7 @@ endif
 
 # This is needed for dav1d
 if meson.get_compiler('cpp').get_id() == 'msvc'
+    add_project_arguments('/std:c11', language: 'c')
     add_project_arguments('/experimental:c11atomics', language: 'c')
 endif
 
