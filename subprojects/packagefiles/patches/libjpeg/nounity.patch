@@ -1,8 +1,24 @@
 diff --git a/simd/meson.build b/simd/meson.build
-index add6fa4..b189470 100644
+index add6fa4..0b68280 100644
 --- a/simd/meson.build
 +++ b/simd/meson.build
-@@ -351,6 +351,7 @@ elif host_cpu in ['ppc', 'ppc64']
+@@ -193,6 +193,7 @@ if host_cpu in ['x86', 'x86_64']
+       simd_src,
+       include_directories: [incdir, 'nasm', dir],
+       pic: get_option('default_library') != 'static',
++      override_options: ['unity=off']
+     )
+   endif
+ elif host_cpu in ['arm', 'aarch64']
+@@ -328,6 +329,7 @@ elif host_cpu in ['arm', 'aarch64']
+       pic: get_option('default_library') != 'static',
+       include_directories: [incdir, 'arm'],
+       c_args: neon_flags,
++      override_options: ['unity=off']
+     )
+   endif
+ elif host_cpu in ['ppc', 'ppc64']
+@@ -351,6 +353,7 @@ elif host_cpu in ['ppc', 'ppc64']
        include_directories: [incdir, 'powerpc'],
        pic: get_option('default_library') != 'static',
        c_args: '-maltivec',
@@ -10,7 +26,7 @@ index add6fa4..b189470 100644
      )
    endif
  elif host_cpu == 'riscv64'
-@@ -381,6 +382,7 @@ elif host_cpu == 'riscv64'
+@@ -381,6 +384,7 @@ elif host_cpu == 'riscv64'
        include_directories: [incdir, 'riscv64'],
        pic: get_option('default_library') != 'static',
        c_args: '-march=rv64gcv',
@@ -18,7 +34,7 @@ index add6fa4..b189470 100644
      )
    endif
  elif host_cpu == 'loongarch64'
-@@ -413,6 +415,7 @@ elif host_cpu == 'loongarch64'
+@@ -413,6 +417,7 @@ elif host_cpu == 'loongarch64'
          '-Wa,-mloongson-mmi,-mloongson-ext',
          cc.get_supported_arguments('-fno-strict-aliasing'),
        ],
