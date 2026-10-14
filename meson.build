@@ -29,7 +29,6 @@ dep_names = [
     'nvtt',
     'etc1',
     'edtaa',
-    'libjpeg'
 ]
 deps = []
 foreach n : dep_names

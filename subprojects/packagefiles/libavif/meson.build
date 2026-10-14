@@ -44,7 +44,7 @@ libavif_lib = static_library(
         'third_party/libyuv/include',
     ],
     override_options:['unity=off'],
-    dependencies: dependency('dav1d')
+    dependencies: [dependency('dav1d'),dependency('libjpeg')]
 )
 
 libavif_dep = declare_dependency(
