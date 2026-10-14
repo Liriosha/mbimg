@@ -1,0 +1,13 @@
+diff --git a/lib/include/squish/squish.h b/lib/include/squish/squish.h
+index 3f60da0..a898fa8 100644
+--- a/lib/include/squish/squish.h
++++ b/lib/include/squish/squish.h
+@@ -30,7 +30,7 @@
+     @brief The sole public header file of the squish library
+  */
+ 
+-#include "squish/squish_export.h"
++#define SQUISH_EXPORT
+ 
+ //! All squish API functions live in this namespace.
+ namespace squish {
