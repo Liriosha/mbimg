@@ -3,4 +3,4 @@ url = https://github.com/liriosha/mbx.git
 revision = HEAD
 depth = 1
 [provide]
-dependency_names = bx
+bx = bx_dep
